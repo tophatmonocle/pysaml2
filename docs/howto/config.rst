@@ -13,7 +13,7 @@ dictionary ("CONFIG") that contains the configuration directives.
 
 The basic structure of the configuration file is therefore like this::
 
-    from saml2 import BINDING_HTTP_REDIRECT
+    from saml2_tophat import BINDING_HTTP_REDIRECT
 
     CONFIG = {
         "entityid" : "http://saml.example.com:saml/idp.xml",
@@ -699,12 +699,12 @@ An endpoint specification can either be just the URL::
 
 or it can be a 2-tuple (URL+binding)::
 
-  from saml2 import BINDING_HTTP_POST
+  from saml2_tophat import BINDING_HTTP_POST
   (”http://localhost:8087/A”, BINDING_HTTP_POST)
 
 or a 3-tuple (URL+binding+index)::
 
-  from saml2 import BINDING_HTTP_POST
+  from saml2_tophat import BINDING_HTTP_POST
   (”http://lingon.catalogix.se:8087/A”, BINDING_HTTP_POST, 1)
 
 If no binding is specified, no index can be set.
@@ -784,7 +784,7 @@ Complete example
 
 We start with a simple but fairly complete Service provider configuration::
 
-    from saml2 import BINDING_HTTP_REDIRECT
+    from saml2_tophat import BINDING_HTTP_REDIRECT
 
     CONFIG = {
         "entityid" : "http://example.com/sp/metadata.xml",
@@ -825,7 +825,7 @@ contain anything from 1 up to many entity descriptions.
 
 A slightly more complex configuration::
 
-    from saml2 import BINDING_HTTP_REDIRECT
+    from saml2_tophat import BINDING_HTTP_REDIRECT
 
     CONFIG = {
         "entityid" : "http://sp.example.com/metadata.xml",
