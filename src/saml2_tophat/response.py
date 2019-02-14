@@ -28,7 +28,6 @@ from saml2_tophat.samlp import STATUS_UNKNOWN_PRINCIPAL
 from saml2_tophat.samlp import STATUS_UNSUPPORTED_BINDING
 from saml2_tophat.samlp import STATUS_RESPONDER
 
-
 from saml2_tophat import xmldsig as ds
 from saml2_tophat import xmlenc as xenc
 

@@ -28,7 +28,6 @@ from saml2_tophat.saml import NameID
 from saml2_tophat.saml import EncryptedAssertion
 from saml2_tophat.saml import Issuer
 from saml2_tophat.saml import NAMEID_FORMAT_ENTITY
-from saml2_tophat.response import AuthnResponse
 from saml2_tophat.response import LogoutResponse
 from saml2_tophat.response import UnsolicitedResponse
 from saml2_tophat.time_util import instant
@@ -63,7 +62,6 @@ from saml2_tophat.sigver import security_context
 from saml2_tophat.sigver import response_factory
 from saml2_tophat.sigver import SigverError
 from saml2_tophat.sigver import SignatureError
-from saml2_tophat.sigver import CryptoBackendXmlSec1
 from saml2_tophat.sigver import make_temp
 from saml2_tophat.sigver import pre_encryption_part
 from saml2_tophat.sigver import pre_signature_part
