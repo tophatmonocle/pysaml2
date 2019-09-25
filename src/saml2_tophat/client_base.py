@@ -56,6 +56,7 @@ from saml2_tophat import BINDING_PAOS
 import logging
 
 logger = logging.getLogger(__name__)
+logger.disabled = True
 
 SSO_BINDING = saml2_tophat.BINDING_HTTP_REDIRECT
 
