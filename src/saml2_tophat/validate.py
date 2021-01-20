@@ -132,7 +132,7 @@ def valid_ipv4(address):
 
 def valid_ipv6(address):
     """Validates IPv6 addresses. """
-    is_enclosed_in_brackets = address.startwith("[") and address.endswith("]")
+    is_enclosed_in_brackets = address.startswith("[") and address.endswith("]")
     address_raw = address[1:-1] if is_enclosed_in_brackets else address
     try:
         IPv6Address(address_raw)
